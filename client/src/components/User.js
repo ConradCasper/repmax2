@@ -5,13 +5,13 @@ class User extends Component {
         return (
             <div>
                 <h3>
-                    Name: blah
+                    name: {this.props.user.name}
                 </h3>
                 <p>
-                    weight: 2323
+                    weight: {this.props.user.weight}
                 </p>
                 <p>
-                    age: adsas
+                    age: {this.props.user.age}
                 </p>
             </div>
         );

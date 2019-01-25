@@ -6,19 +6,19 @@ class Workout extends Component {
             <div>
                 <ul>
                     <li>
-                        date: 01/25/19
+                        date: {this.props.workout.date}
                     </li>
                     <li>
-                        length: 2hr
+                        length: {this.props.workout.length}
                     </li>
                     <li>
-                        movements: deadlift, over-head press, incline bench press
+                        movements: {this.props.workout.movements}
                     </li>
                     <li>
-                        weight: 185lbs
+                        weight: {this.props.workout.weight}
                     </li>
                     <li>
-                        reps: 78
+                        reps: {this.props.workout.reps}
                     </li>
                 </ul>
             

@@ -1,0 +1,25 @@
+{
+  "name": "repmax2",
+  "version": "1.0.0",
+  "description": "A workout app that allows users to keep track of their progress by logging their workouts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conradcasper22/repmax2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conradcasper22/repmax2/issues"
+  },
+  "homepage": "https://github.com/conradcasper22/repmax2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.6"
+  }
+}

@@ -15,19 +15,19 @@ class Workout extends Component {
             <div>
                 <ul>
                     <li>
-                        date: {this.props.workout.date}
+                        date: {this.props.workouts.date}
                     </li>
                     <li>
-                        length: {this.props.workout.length}
+                        length: {this.props.workouts.length}
                     </li>
                     <li>
-                        movements: {this.props.workout.movements}
+                        movements: {this.props.workouts.movements}
                     </li>
                     <li>
-                        weight: {this.props.workout.weight}
+                        weight: {this.props.workouts.weight}
                     </li>
                     <li>
-                        reps: {this.props.workout.reps}
+                        reps: {this.props.workouts.reps}
                     </li>
                 </ul>
                 <button onClick={this.deleteWorkout}>Delete</button>

@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Workout extends Component {
+
+    editWorkout = () => {
+        console.log("editWorkout")
+    }
+
+    deleteWorkout = () => {
+        console.log("deleteWorkout")
+    }
+
     render() {
         return (
             <div>
@@ -21,6 +30,8 @@ class Workout extends Component {
                         reps: {this.props.workout.reps}
                     </li>
                 </ul>
+                <button onClick={this.deleteWorkout}>Delete</button>
+                <button onClick={this.editWorkout}>Edit</button>
             
                 
             </div>

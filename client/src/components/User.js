@@ -13,6 +13,8 @@ class User extends Component {
                 <p>
                     age: {this.props.user.age}
                 </p>
+                <button>Edit</button>
+                <button>Delete</button>
             </div>
         );
     }

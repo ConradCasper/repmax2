@@ -21,6 +21,7 @@
   "homepage": "https://github.com/conradcasper22/repmax2#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "mongoose": "^5.4.6"

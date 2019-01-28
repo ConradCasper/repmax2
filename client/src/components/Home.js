@@ -8,6 +8,9 @@ class Home extends Component {
         user: {name: 'Conrad', weight: 185, age: 27},
         workout: {reps: 10, length: "1hr 15min", movements:['dead lift', 'incline bench press'], date: '1/25/19', weight: "75lbs" }
     }
+    
+    
+
     render() {
         return (
             <div>

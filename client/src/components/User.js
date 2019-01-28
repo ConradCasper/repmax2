@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 
 class User extends Component {
+
+    editUser = () => {
+        console.log('editUser')
+    }
+
+    deleteUser = () => {
+        console.log('deleteUser')
+    }
+
+
     render() {
         return (
             <div>
@@ -13,8 +23,8 @@ class User extends Component {
                 <p>
                     age: {this.props.user.age}
                 </p>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button onClick={this.editUser}>Edit</button>
+                <button onClick={this.deleteUser}>Delete</button>
             </div>
         );
     }

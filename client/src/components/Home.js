@@ -30,7 +30,7 @@ class Home extends Component {
             <div>
                 <header>
                     <h1>
-                        Rep Max
+                    Rep Max
                     </h1>
                 </header>
                 <nav>

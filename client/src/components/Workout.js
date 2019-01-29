@@ -13,7 +13,7 @@ class Workout extends Component {
     render() {
         return (
             <div>
-                <ul>
+                {/* <ul>
                     <li>
                         date: {this.props.workouts.date}
                     </li>
@@ -31,7 +31,7 @@ class Workout extends Component {
                     </li>
                 </ul>
                 <button onClick={this.deleteWorkout}>Delete</button>
-                <button onClick={this.editWorkout}>Edit</button>
+                <button onClick={this.editWorkout}>Edit</button> */}
             
                 
             </div>

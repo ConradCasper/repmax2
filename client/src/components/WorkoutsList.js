@@ -5,9 +5,20 @@ class WorkoutsList extends Component {
     render() {
         return (
             <div>
-                <Workout workouts={this.props.workouts[0]}/>
-                <Workout workouts={this.props.workouts[0]} />
-                <Workout workouts={this.props.workouts[0]} />
+                {this.props.workouts.map((workout, i) => {
+                    return (<Workout
+                        key={i}
+                        workoutDate={workout.date}
+                        workoutReps={workout.reps}
+                        workoutId={i}
+                        
+
+                
+                        
+                    />)
+                })
+                }
+                <button>Create New Workout</button>
             </div>
         );
     }

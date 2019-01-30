@@ -2,50 +2,25 @@ import React, { Component } from 'react';
 import User from './User'
 import WorkoutsList from './WorkoutsList'
 import UserList from './UserList'
+import axios from 'axios'
 
 
 
 class Home extends Component {
     state = {
-        users: [{
-            user: {
-                name: 'Conrad',
-                weight: 185,
-                age: 27
-            },
-            workouts: [
-                {
-                    reps: 10,
-                    length: "1hr 15min",
-                    movements: [
-                        'dead lift',
-                        'incline bench press'
-                    ],
-                    date: '1/25/19',
-                    weight: "75lbs"
-                }
-            ]
-        },
-        {
-            user: {
-                name: 'Cameron',
-                weight: 160,
-                age: 26
-            },
-            workouts: [
-                {
-                    reps: 10,
-                    length: "1hr 15min",
-                    movements: [
-                        'dead lift',
-                        'incline bench press'
-                    ],
-                    date: '1/25/19',
-                    weight: "75lbs"
-                }
-            ]
-        }]
+        users: [{}]
     }
+
+    componentDidMount(){
+        this.getAllUsers()
+    }
+
+    getAllUsers = () => {
+        axios.get('/api/users').then((res) => {
+            this.setState({users: res.data})
+        })
+    }
+
 
     render() {
         return (
@@ -58,7 +33,7 @@ class Home extends Component {
                 <nav>
                     Home
                 </nav>
-                <h1>User: Cassius</h1>
+                
                 
                 <UserList userList={this.state.users} />
 

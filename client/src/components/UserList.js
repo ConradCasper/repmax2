@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import User from './User'
+import {Link} from 'react-router-dom'
 
 class UserList extends Component {
     
@@ -9,13 +10,13 @@ class UserList extends Component {
                 {this.props.userList.map((user) =>(
                     <div>
                         <h1>
-                            {user.user.name}
+                            <Link to={`/user/${user._id}`}>{user.name}</Link>
                         </h1>
                         <p>
-                            {user.user.weight}
+                            {user.weight}
                         </p>
                         <p>
-                            {user.user.age}
+                            {user.age}
                         </p>
                     </div>
                 ))}

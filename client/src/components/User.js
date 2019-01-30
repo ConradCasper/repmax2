@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 
 class User extends Component {
+
+    state = {
+        user: {}
+    }
+
+    componentDidMount () {
+        this.getSingleUser()
+    }
+
+    getSingleUser = () => {
+        axios.get(`/api/users/${this.props.match.params.userId}`).then((res) => {
+                this.setState({user: res.data})
+    })
+    }
 
     editUser = () => {
         console.log('editUser')
@@ -15,13 +30,13 @@ class User extends Component {
         return (
             <div>
                 <h3>
-                    name: {this.props.user.name}
+                    name: {this.state.user.name}
                 </h3>
                 <p>
-                    weight: {this.props.user.weight}
+                    weight: {this.state.user.weight}
                 </p>
                 <p>
-                    age: {this.props.user.age}
+                    age: {this.state.user.age}
                 </p>
                 <button onClick={this.editUser}>Edit</button>
                 <button onClick={this.deleteUser}>Delete</button>
